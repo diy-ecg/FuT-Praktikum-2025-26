@@ -157,6 +157,7 @@ classdef serialPortClass < handle
         endfor
         % Aufruf für jeden Stream nur einmal
         for k = 1:length(uniqueStreams)
+          stream = uniqueStreams{k};
           j = self.streamSelector(stream);
           % Übergabe der gesamten Liste auf einmal an addSample
           dataStream(j).addSamples(groupedData.(stream).samples,groupedData.(stream).timestamps);
