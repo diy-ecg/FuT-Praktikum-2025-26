@@ -1,6 +1,6 @@
 #          XPortDataStreamer V 2.0  (XPDS)
 #  (c) Jens Bongartz, 2025, Hochschule Koblenz
-#                Stand: 05.03.2025
+#                Stand: 05.10.2025
 #  ================================================
 pkg load instrument-control;
 pkg load signal;
@@ -147,4 +147,5 @@ if !isempty(inputPort)
   clear inputPort;
 endif
 profile off
+
 
